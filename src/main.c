@@ -82,8 +82,12 @@ void destroy_game(void)
 
 int main(void)
 {
-        SDL_Init(SDL_INIT_VIDEO) <0;
-	GameRunning = initializeWindow();
+        if(SDL_Init(SDL_INIT_VIDEO) < 0){
+        std::cout << "SDL could not be initialized: " <<
+                  SDL_GetError();
+	}else{
+        std::cout << "SDL video system is ready to go\n";
+	}
 
 	setup_game();
 
