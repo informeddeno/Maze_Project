@@ -44,7 +44,7 @@ bool initializeWindow(void)
 	SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
 
 	/* allocate the total amount of bytes in memory to hold our colorbuffer */
-	colorBuffer = malloc(sizeof(color_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
+	colorBuffer = (color_t*)malloc(sizeof(color_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
 
 	/* create an SDL_Texture to display the colorbuffer */
 	colorBufferTexture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA32,
