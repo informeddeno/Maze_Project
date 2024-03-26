@@ -1,4 +1,5 @@
 #include "../headers/header.h"
+#include <iostream>
 
 bool GameRunning = false;
 int TicksLastFrame;
