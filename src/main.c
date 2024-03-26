@@ -82,7 +82,7 @@ void destroy_game(void)
 
 int main(void)
 {
-        SDL_Init(SDL_INIT_VIDEO) <0
+        SDL_Init(SDL_INIT_VIDEO) <0;
 	GameRunning = initializeWindow();
 
 	setup_game();
