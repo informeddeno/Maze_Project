@@ -1,5 +1,5 @@
 #include "../headers/header.h"
-#include <iostream>
+#include "SDL.h"
 
 bool GameRunning = false;
 int TicksLastFrame;
