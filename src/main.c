@@ -34,6 +34,7 @@ void setup_game(void)
 void update_game(void)
 {
 	float DeltaTime;
+	int TicksLastFrame;
 	int timeToWait = FRAME_TIME_LENGTH - (SDL_GetTicks() - TicksLastFrame);
 
 	if (timeToWait > 0 && timeToWait <= FRAME_TIME_LENGTH)
