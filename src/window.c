@@ -76,6 +76,7 @@ void destroyWindow(void)
 void clearColorBuffer(color_t color)
 {
 	int i;
+	color_t clearColor = color;
 
 	for (i = 0; i < SCREEN_WIDTH * SCREEN_HEIGHT; i++)
 		colorBuffer[i] = color;
