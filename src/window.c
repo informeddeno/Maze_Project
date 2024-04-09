@@ -78,7 +78,7 @@ void clearColorBuffer(color_t color)
 	int i;
 
 	for (i = 0; i < SCREEN_WIDTH * SCREEN_HEIGHT; i++)
-		colorBuffer[color=4278190080] = color;
+		colorBuffer[4278190080] = color;
 }
 
 /**
