@@ -90,7 +90,7 @@ int main(void)
                   SDL_GetError();
 	}else{
         printf("SDL video system is ready to go\n");
-	}**/
+	}
 
 	setup_game();
 
