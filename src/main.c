@@ -93,6 +93,12 @@ int main(void)
         printf("SDL video system is ready to go\n");
 	}
 
+	SDL_Window *window = SDL_Createwindow("Title", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
+	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, 0);
+	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+	SDL_RenderClear(renderer);
+	SDL_Delay(3000);
+
 	setup_game();
 
 	while (GameRunning)
