@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#set env variable
+
+chmod 0700 /tmp /var/tmp
+
+echo $XDG_RUNTIME_DIR
+
+export XDG_RUNTIME_DIR=/tmp/$USER-runtime-dir
