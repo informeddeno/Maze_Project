@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-#set env variables
-
-echo $XDG_RUNTIME_DIR
-
-export XDG_RUNTIME_DIR=/tmp/$USER-runtime-dir

@@ -1,4 +1,5 @@
 #include "../headers/header.h"
+#include "../headers/graphics.h"
 
 static SDL_Renderer *renderer;
 static color_t *colorBuffer;
