@@ -36,7 +36,8 @@ if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
 		return (false);
 	}
 
-  window = SDL_CreateWindow
+ int WINDOW_WIDTH, WINDOW_HEIGHT;
+ window = SDL_CreateWindow
 	(
 		NULL,
 		SDL_WINDOWPOS_CENTERED,
