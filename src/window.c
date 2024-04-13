@@ -19,7 +19,7 @@ bool initializeWindow(void)
 		fprintf(stderr, "Error initializing SDL.\n");
 		return (false);
 	}
-	SDL_GetCurrentDisplayMode(0, &display_mode);
+	/**	SDL_GetCurrentDisplayMode(0, &display_mode);
 	fullScreenWidth = display_mode.w;
 	fullScreenHeight = display_mode.h;
 	window = SDL_CreateWindow(
@@ -29,7 +29,18 @@ bool initializeWindow(void)
 		fullScreenWidth,
 		fullScreenHeight,
 		SDL_WINDOW_BORDERLESS
+		);**/
+	window = SDL_CreateWindow
+	(
+		NULL,
+		SDL_WINDOWPOS_CENTERED,
+		SDL_WINDOWPOS_CENTERED,
+		WINDOW_WIDTH,
+		WINDOW_HEIGHT,
+		SDL_WINDOW_RESIZABLE
 	);
+
+	
 	if (!window)
 	{
 		fprintf(stderr, "Error creating SDL window.\n");
