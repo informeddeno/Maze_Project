@@ -38,8 +38,8 @@ bool initializeWindow(void)
 		fprintf(stderr, "Error initializing SDL.\n");
 		return (false);
 	}
-  WINDOW_WIDTH = display_mode.w
-  WINDOW_HEIGHT = display_mode.h
+  WINDOW_WIDTH = display_mode.w;
+  WINDOW_HEIGHT = display_mode.h;
 
 
   window = SDL_CreateWindow
