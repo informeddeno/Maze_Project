@@ -30,14 +30,15 @@ bool initializeWindow(void)
 		fullScreenHeight,
 		SDL_WINDOW_BORDERLESS
 		);**/
-if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
+  int WINDOW_WIDTH, WINDOW_HEIGHT;  
+
+  if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
 	{
 		fprintf(stderr, "Error initializing SDL.\n");
 		return (false);
 	}
 
- int WINDOW_WIDTH, WINDOW_HEIGHT;
- window = SDL_CreateWindow
+  window = SDL_CreateWindow
 	(
 		NULL,
 		SDL_WINDOWPOS_CENTERED,
