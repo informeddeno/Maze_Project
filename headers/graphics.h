@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <SDL2/SDL.h>
-#include "defs.h"
+#include "../headers/defs.h"
 
 bool	initializeWindow(void);
 void	destroyWindow(void);
