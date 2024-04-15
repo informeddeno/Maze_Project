@@ -31,7 +31,7 @@ bool initializeWindow(void)
 		SDL_WINDOW_BORDERLESS
 		);**/
   SDL_DisplayMode display_mode;
-  int WINDOW_WIDTH, WINDOW_HEIGHT;  
+  int WINDOW_WIDTH; int WINDOW_HEIGHT;  
 
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
 	{
