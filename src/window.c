@@ -12,15 +12,15 @@ static SDL_Window *window;
 bool initializeWindow(void)
 {
   SDL_DisplayMode display_mode;
-	int fullScreenWidth, fullScreenHeight;
+  int fullScreenWidth; int fullScreenHeight;
 
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
 	{
 		fprintf(stderr, "Error initializing SDL.\n");
 		return (false);
 	}
-	/**SDL_GetCurrentDisplayMode(0, &display_mode);
-	fullScreenWidth = display_mode.w;
+	SDL_GetCurrentDisplayMode(0, &display_mode);
+	/**	fullScreenWidth = display_mode.w;
 	fullScreenHeight = display_mode.h;**/
 
 	window = SDL_CreateWindow (
