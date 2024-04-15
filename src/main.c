@@ -99,6 +99,7 @@ int main(void)
 	SDL_RenderClear(renderer);
 	SDL_Delay(3000);
 
+	initializeWindow();
 	setup_game();
 
 	while (GameRunning)
