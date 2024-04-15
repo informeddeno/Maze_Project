@@ -85,10 +85,10 @@ int main(void)
 {
         SDL_Init(SDL_INIT_EVERYTHING);
 
-	/**	if(SDL_Init(SDL_INIT_EVERYTHING) < 0){
+	if(SDL_Init(SDL_INIT_EVERYTHING) < 0){
         printf("SDL could not be initialized\n");
-                  SDL_GetError();
-		  }else**/
+        SDL_GetError();
+	}else**/
 	{
         printf("SDL video system is ready to go\n");
 	}
