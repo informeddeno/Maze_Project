@@ -19,10 +19,12 @@ bool initializeWindow(void)
 		fprintf(stderr, "Error initializing SDL.\n");
 		return (false);
 	}
-	SDL_GetCurrentDisplayMode(0, &display_mode);
+	/**SDL_GetCurrentDisplayMode(0, &display_mode);**/
 	fullScreenWidth = display_mode.w;
 	fullScreenHeight = display_mode.h;
-	window = SDL_CreateWindow(
+
+	window = SDL_CreateWindow
+	  (
 		NULL,
 		SDL_WINDOWPOS_CENTERED,
 		SDL_WINDOWPOS_CENTERED,
