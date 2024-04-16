@@ -96,7 +96,6 @@ int main(void)
 	
 	SDL_Window *window = SDL_CreateWindow("Title", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
 
-	SDL_CreateWindow();
 	bool initializeWindow(void);
 	if (!initializeWindow()) {
         fprintf(stderr, "Error initializing window.\n");
