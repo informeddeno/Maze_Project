@@ -1,7 +1,7 @@
 #include "../headers/header.h"
 #include "SDL2/SDL.h"
 
-bool GameRunning = true;
+bool GameRunning = false;
 int TicksLastFrame;
 player_t player;
 
