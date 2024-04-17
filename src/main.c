@@ -1,7 +1,7 @@
 #include "../headers/header.h"
 #include "SDL2/SDL.h"
 
-bool GameRunning = false;
+bool GameRunning = true;
 int TicksLastFrame;
 player_t player;
 
@@ -55,8 +55,11 @@ void update_game(void)
 
 void render_game(void)
 {
-	clearColorBuffer(4278190080);
+  clearColorBuffer(0xFF000000);
 
+  /**clearColorBuffer(4278190080);
+   **/
+  
 	renderWall();
 
 	renderMap();
